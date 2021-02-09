@@ -22,3 +22,8 @@ Route::get('/', function () {
 })->name('dashboard'); */
 
 Route::get('/Admin', 'App\Http\Controllers\AdminController@index');
+
+Route::get('/TablasHomologacion', 'App\Http\Controllers\TablasHomologacionController@index');
+Route::get('/Analisis', 'App\Http\Controllers\AnalisisController@index');
+Route::get('/BasedeDatos', 'App\Http\Controllers\BasedeDatosController@index');
+Route::get('/Usuarios', 'App\Http\Controllers\UsuariosController@index');

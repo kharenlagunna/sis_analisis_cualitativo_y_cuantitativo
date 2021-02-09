@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => 'Sistema de Analisis<br>Cualitativo y Cuantitativo',
+    'logo' => 'Sistema de Análisis <br>Cualitativo y Cuantitativo',
     'logo_img' => 'vendor/adminlte/dist/img/logo.jpg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -238,26 +238,31 @@ return [
         ['header' => 'Bienvenido'],
 
         [
+            'text' => 'Dashboard',
+            'url'  => 'Admin',
+            'icon' => 'fas fa-tachometer-alt',
+        ],
+        [
             'text' => 'Tablas de Homologación',
-            'url'  => 'admin/settings',
+            'url'  => 'TablasHomologacion',
             'icon' => 'fas fa-border-all',
         ],
       
         [
             'text' => 'Bases de Datos',
-            'url'  => 'admin/settings',
+            'url'  => 'BasedeDatos',
             'icon' => 'fas fa-database',
         ],
 
         [
             'text' => 'Analisis',
-            'url'  => 'admin/settings',
+            'url'  => 'Analisis',
             'icon' => 'fas fa-chart-pie',
         ],
 
         [
             'text' => 'Usuarios',
-            'url'  => 'admin/settings',
+            'url'  => 'Usuarios',
             'icon' => 'fas fa-fw fa-user',
         ],
 

@@ -1,14 +1,13 @@
 
 <x-guest-layout>
     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Registrarse</a>
     </div>
     <x-jet-authentication-card>
 
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
-        
+            <img src="vendor/adminlte/dist/img/logo.png" width="180px">
+        </x-slot>        
 
         <x-jet-validation-errors class="mb-4" />
 
@@ -28,7 +27,7 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
+                <x-jet-label for="password" value="Contraseña" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
             </div>
 
@@ -40,14 +39,14 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
+               {{--  @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
-                @endif
+                @endif --}}
 
                 <x-jet-button class="ml-4">
-                    {{ __('Login') }}
+                   Ingresar
                 </x-jet-button>
             </div>
         </form>
