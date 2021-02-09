@@ -16,7 +16,7 @@ class CreatePerfilTable extends Migration
         Schema::create('perfil', function (Blueprint $table) {
             $table->id();
             $table->string('perfil',20);
-            $table->string('descripcion');
+            $table->string('descripcion', 100);
             $table->timestamps();
         });
     }

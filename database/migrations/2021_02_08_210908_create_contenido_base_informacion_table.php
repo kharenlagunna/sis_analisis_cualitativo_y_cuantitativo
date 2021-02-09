@@ -15,10 +15,10 @@ class CreateContenidoBaseInformacionTable extends Migration
     {
         Schema::create('contenido_base_informacion', function (Blueprint $table) {
             $table->id();
-            $table->integer('llave_cruce');
+            $table->string('llave_cruce', 100);
             $table->text('campo_informacion');
-            $table->string('grupo_categoria');
-            $table->string('categoria_especifica');
+            $table->string('grupo_categoria', 100);
+            $table->string('categoria_especifica', 100);
             $table->timestamps();
         });
     }

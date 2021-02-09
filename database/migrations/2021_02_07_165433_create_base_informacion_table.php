@@ -17,9 +17,9 @@ class CreateBaseInformacionTable extends Migration
     {
         Schema::create('base_informacion', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_base', 30);
-            $table->text('descripcion_base');
-            $table->string('sector_industri_base');
+            $table->string('nombre_base', 100);
+            $table->text('descripcion_base', 100);
+            $table->string('sector_industri_base', 100);
             $table->timestamps();
         });
     }

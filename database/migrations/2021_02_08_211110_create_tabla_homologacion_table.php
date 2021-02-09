@@ -15,7 +15,7 @@ class CreateTablaHomologacionTable extends Migration
     {
         Schema::create('tabla_homologacion', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_tabla');
+            $table->string('nombre_tabla', 100);
             $table->string('descripcion_tabla', 100);
             $table->string('sector_industria_tabla', 100);
             $table->timestamps();

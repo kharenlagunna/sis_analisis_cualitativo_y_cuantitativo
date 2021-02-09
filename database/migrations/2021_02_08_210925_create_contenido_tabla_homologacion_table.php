@@ -15,8 +15,8 @@ class CreateContenidoTablaHomologacionTable extends Migration
     {
         Schema::create('contenido_tabla_homologacion', function (Blueprint $table) {
             $table->id();
-            $table->string('grupo_categoria');
-            $table->string('categoria_especifica');
+            $table->string('grupo_categoria', 100);
+            $table->string('categoria_especifica', 100);
             $table->timestamps();
         });
     }
