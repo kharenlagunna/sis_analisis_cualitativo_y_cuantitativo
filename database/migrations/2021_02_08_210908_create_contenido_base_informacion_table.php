@@ -17,7 +17,7 @@ class CreateContenidoBaseInformacionTable extends Migration
             $table->id();
             $table->string('llave_cruce', 100);
             $table->text('campo_informacion');
-            $table->string('grupo_categoria', 100);
+            $table->string('grupo_categoria', 100); // Ver como dejar not null
             $table->string('categoria_especifica', 100);
             $table->timestamps();
         });
